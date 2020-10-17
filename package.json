@@ -1,23 +1,33 @@
 {
-  "name": "vasan2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gennadytabala/vasan2.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gennadytabala/vasan2/issues"
-  },
-  "homepage": "https://github.com/gennadytabala/vasan2#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+	"name": "vasan2",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"compile": "babel src --out-dir public",
+		"watch": "babel src --out-dir public --watch --verbose",
+		"start": "nodemon -w server server/server.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gennadytabala/vasan2.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/gennadytabala/vasan2/issues"
+	},
+	"homepage": "https://github.com/gennadytabala/vasan2#readme",
+	"dependencies": {
+		"express": "^4.17.1",
+		"nodemon": "^1.19.4"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.12.1",
+		"@babel/core": "^7.12.1",
+		"@babel/preset-env": "^7.12.1",
+		"@babel/preset-react": "^7.12.1"
+	}
 }
